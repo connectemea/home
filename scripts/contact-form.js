@@ -1,4 +1,5 @@
 $("#submit-form").submit((e) => {
+    $("#form_alerts").html("<div class='alert alert-secondary align-content-center'>Loading... <i id='loading' class='fas fa-circle-notch'></i></div>")
     e.preventDefault()
     $.ajax({
         url: "https://script.google.com/macros/s/AKfycbyGmtDMLVuc4LWMzJya4vAFx1eth0lkuQHGYwfg7IflY1LvK5hh/exec",
